@@ -19,10 +19,7 @@ echo '= Adiciona usuário t480s ='
 echo ''
 adduser --gecos '' t480s
 
-clear
-echo ''
-echo '= Adiciona usuário ao grupo root ='
-echo ''
+# Adiciona usuário ao grupo root
 usermod -a -G sudo t480s
 
 # Desabilita interação com o pacote `tzdata` e disponibiliza o conteúdo de `DEBIAN_FRONTEND` para o script
@@ -30,8 +27,10 @@ export DEBIAN_FRONTEND=noninteractive
 
 clear
 echo ''
-echo '= Instalação de softwares ='
+echo '= Instalação de softwares - Aguarde... ='
 echo ''
+sleep 2
+
 apt install -y git \
                curl \
                sudo \
@@ -40,8 +39,21 @@ apt install -y git \
                zsh \
                neovim
 
+clear
+echo ''
+echo '= Definindo configurações locais (Inglês) ='
+echo ''
+echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen
+locale
+clear
+
 # Altera o fuso horário para São Paulo
 ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 
 # Atribui o shell ZSH ao usuário criado
 chsh -s /bin/zsh t480s
+
+clear
+echo ''
+echo '= Configurações adicionais concluídas! ='
+echo ''
