@@ -4,6 +4,9 @@
 [ ! -d ~/.ssh ] && mkdir ~/.ssh
 chmod 700 ~/.ssh
 
+# Adiciona Plugin Manager Vim-Plug para o NeoVim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Se exitir arquivos na pasta, alterar permissão para melhorar segurança
 # chmod 600 ~/.ssh/*
 
