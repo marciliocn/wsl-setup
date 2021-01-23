@@ -58,12 +58,13 @@ ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 chsh -s $(which zsh) $USUARIO
 
 # Adiciona arquivo .zshrc vazio para evitar configuração do ZSH
-#touch /home/$USUARIO/.zshrc
+# touch /home/$USUARIO/.zshrc
 
 # Passa a propriedade do arquivo para $USUARIO
-#chown $USUARIO:$USUARIO /home/$USUARIO/.zshrc
+# chown $USUARIO:$USUARIO /home/$USUARIO/.zshrc
 
 clear
 echo ''
 echo '= Configurações adicionais concluídas! ='
 echo ''
+
