@@ -72,7 +72,7 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 " = ^ Pagar.me ^ =
 
-"== EMMET
+"== EMMET ==
 
 " Alteração da tecla trigger para o Emmet
 let g:user_emmet_leader_key=','
