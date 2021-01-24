@@ -54,7 +54,7 @@ set inccommand=split
 "= ATALHOS =
 "===========
 " Definir tecla de comando para início dos atalhos
-let mapleader="\<space>"
+let mapleader='\<space>'
 
 " Atalhos para modo NORMAL
 " n = NORMAL mode
@@ -71,6 +71,11 @@ nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 " = ^ Pagar.me ^ =
+
+"== EMMET
+
+" Alteração da tecla trigger para o Emmet
+let g:user_emmet_leader_key=','
 
 "===========
 "= VISUAIS =
