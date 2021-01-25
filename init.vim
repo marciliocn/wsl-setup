@@ -54,7 +54,7 @@ set inccommand=split
 "= ATALHOS =
 "===========
 " Definir tecla de comando para início dos atalhos
-let mapleader='\<space>'
+let mapleader="\<space>"
 
 " Atalhos para modo NORMAL
 " n = NORMAL mode
