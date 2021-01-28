@@ -46,9 +46,12 @@ set hidden
 " Habilita suporte a mouse
 set mouse=a
 
-" [NeoVim] Permite visualizar alterações de substituições no arquivo em tempo
-" real
+" [NeoVim] Permite visualizar alterações de substituições no arquivo em tempo real
 set inccommand=split
+
+"= netrw - native file manager =
+" Exibir arquivos com layout tree
+let g:netrw_liststyle = 3
 
 "===========
 "= ATALHOS =
@@ -73,7 +76,6 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 " = ^ Pagar.me ^ =
 
 "== EMMET ==
-
 " Alteração da tecla trigger para o Emmet
 let g:user_emmet_leader_key=','
 
