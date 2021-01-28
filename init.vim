@@ -38,6 +38,12 @@ set shiftwidth=4
 " Para TAB, Ctrl-V<Tab>
 set expandtab
 
+" Ativa marcação da linha que o cursor está
+set cursorline
+
+" Brilha a tela ao invés de sinalizar por som quando ocorrem erros
+set visualbell
+
 " = V Pagar.me V: https://www.youtube.com/watch?v=kZDT10nFiTY =
 
 " Permite abrir novos arquivos mesmo com arquivo em edição sem salvar
