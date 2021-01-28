@@ -1,3 +1,4 @@
+" Configurações melhor aproveitadas no Neovim
 "===========
 "= PLUGINS =
 "===========
@@ -22,10 +23,13 @@ set nu
 " Força arquivos a estarem no formato Unix
 set fileformats=unix
 
+" Identação automática SMART
+filetype plugin indent on
+
 " Habilita configuração correta de Temas
 " if you have Neovim >= 0.1.5
 if (has("termguicolors"))
-set termguicolors
+    set termguicolors
 endif
 
 " Número de espaços inseridos quando TAB for usado
@@ -43,6 +47,9 @@ set cursorline
 
 " Brilha a tela ao invés de sinalizar por som quando ocorrem erros
 set visualbell
+
+" Define título da janela de acordo com o arquivo aberto
+set title
 
 " = V Pagar.me V: https://www.youtube.com/watch?v=kZDT10nFiTY =
 
