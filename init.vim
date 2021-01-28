@@ -52,6 +52,10 @@ set inccommand=split
 "= netrw - native file manager =
 " Exibir arquivos com layout tree
 let g:netrw_liststyle = 3
+" Abrir arquivos à direita, dividindo a janela verticalmente
+let g:netrw_browse_split = 2
+" Define em 20% do tamanho do netrw na janela do Vim
+let g:netrw_winsize = 20
 
 "===========
 "= ATALHOS =
