@@ -38,7 +38,6 @@ set tabstop=4
 " Largura da identação no código
 set shiftwidth=4
 
-" Quando usar TAB, inserir espaços
 " Para TAB, Ctrl-V<Tab>
 set expandtab
 
@@ -50,6 +49,11 @@ set visualbell
 
 " Define título da janela de acordo com o arquivo aberto
 set title
+
+" Ignorar CASE nas buscas...
+set ignorecase
+" ... a não ser que informe letra maiúscula
+set smartcase
 
 " = V Pagar.me V: https://www.youtube.com/watch?v=kZDT10nFiTY =
 
