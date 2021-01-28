@@ -23,7 +23,7 @@ set nu
 " Força arquivos a estarem no formato Unix
 set fileformats=unix
 
-" Identação automática SMART
+" Identação automática SMART (ao invés da antiga `smartindent`)
 filetype plugin indent on
 
 " Habilita configuração correta de Temas
@@ -105,6 +105,15 @@ let g:user_emmet_leader_key=','
 "===========
 " Habilita coloração de syntax para arquivos de códigos fonte
 syntax enable
+
+" Quebra de linhas (wrap) conveniente - e não no meio das palavras
+set linebreak
+
+" Linhas para manter acima e abaixo do cursor
+set scrolloff=3
+
+" Colunas para manter a esquerda e direita do cursor
+set sidescrolloff=5
 
 " Ativa o tema Drácula
 colorscheme dracula
