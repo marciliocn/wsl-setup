@@ -9,6 +9,7 @@ call plug#begin()
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
+" Ativa Git dentro do Neovim e também mostra a branch no Airline
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
