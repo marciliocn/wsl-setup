@@ -9,7 +9,6 @@ call plug#begin()
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -109,7 +108,7 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 let g:user_emmet_leader_key=','
 
 "== Airline ==
-" Popula a variável `g:airline_symbols` with powerline symbols
+" Ativa símbolos `powerline` na barra Airline
 let g:airline_powerline_fonts = 1
 
 "===========
