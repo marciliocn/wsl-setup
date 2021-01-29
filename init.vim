@@ -110,6 +110,10 @@ let g:user_emmet_leader_key=','
 "== Airline ==
 " Ativa símbolos `powerline` na barra Airline
 let g:airline_powerline_fonts = 1
+" Ativa detalhes dos buffers (cabeçalho)
+let g:airline#extensions#tabline#enabled = 1
+" Exibe número dos buffers
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 "===========
 "= VISUAIS =
