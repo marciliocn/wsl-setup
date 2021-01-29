@@ -9,6 +9,7 @@ call plug#begin()
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
