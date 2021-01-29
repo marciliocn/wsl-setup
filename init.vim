@@ -8,6 +8,7 @@ call plug#begin()
 " Lista de Plugins usados
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'mattn/emmet-vim'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -106,6 +107,10 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 " Alteração da tecla trigger para o Emmet
 let g:user_emmet_leader_key=','
 
+"== Airline ==
+" Popula a variável `g:airline_symbols` with powerline symbols
+let g:airline_powerline_fonts = 1
+
 "===========
 "= VISUAIS =
 "===========
@@ -120,6 +125,9 @@ set scrolloff=3
 
 " Colunas para manter a esquerda e direita do cursor
 set sidescrolloff=5
+
+" Ocultar o --INSERT-- no final da tela
+set noshowmode
 
 " Ativa o tema Drácula
 colorscheme dracula
