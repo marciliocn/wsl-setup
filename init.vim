@@ -55,6 +55,12 @@ set ignorecase
 " ... a não ser que informe letra maiúscula
 set smartcase
 
+" Pergunta se deseja fechar um arquivo não salvo
+set confirm
+
+" Desativa recurso `modeline` e adota as configurações desse arquivo
+set nomodeline
+
 " = V Pagar.me V: https://www.youtube.com/watch?v=kZDT10nFiTY =
 
 " Permite abrir novos arquivos mesmo com arquivo em edição sem salvar
