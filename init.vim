@@ -35,10 +35,13 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-" Número de espaços inseridos quando TAB for usado
+" Identa com 4 espaços quando teclado TAB
+set softtabstop=4
+
+" Exibe TAB com largura de 4 espaços
 set tabstop=4
 
-" Largura da identação no código
+" Identa com 4 espaços quando auto-indentação
 set shiftwidth=4
 
 " Para TAB, Ctrl-V<Tab>
@@ -121,7 +124,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 "= VISUAIS =
 "===========
 " Habilita coloração de syntax para arquivos de códigos fonte
-syntax enable
+syntax on 
 
 " Quebra de linhas (wrap) conveniente - e não no meio das palavras
 set linebreak
